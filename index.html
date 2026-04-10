@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raphelec41 — Électricien à Naveil & Vendôme | Dépannage 24h/24 7j/7</title>
+  <meta name="description" content="Raphelec41, votre électricien de confiance à Naveil et Vendôme. Dépannage d'urgence 24h/24, installation, rénovation, éclairage. Devis gratuit. Appelez le 06 25 09 64 01.">
+  <meta name="keywords" content="électricien, Naveil, Vendôme, Loir-et-Cher, dépannage électrique, installation électrique, éclairage LED, Raphelec41">
+  <meta property="og:title" content="Raphelec41 — Électricien à Naveil & Vendôme">
+  <meta property="og:description" content="Dépannage d'urgence 24h/24 7j/7. Installation, rénovation, éclairage. Devis gratuit.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://raphelec41.fr">
+  <link rel="icon" href="assets/logo-white.png" type="image/png">
+  <link rel="canonical" href="https://raphelec41.fr/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --font-heading: 'Plus Jakarta Sans', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+      --color-navy: #0B1120;
+      --color-navy-light: #131C31;
+      --color-slate-dark: #1E293B;
+      --color-electric: #3B82F6;
+      --color-electric-bright: #60A5FA;
+      --color-amber: #F59E0B;
+      --color-amber-light: #FCD34D;
+    }
+  </style>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+    .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes pulse-ring {
+      0% { transform: scale(1); opacity: 0.6; }
+      100% { transform: scale(1.5); opacity: 0; }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    .animate-fade-up { animation: fadeInUp 0.7s ease-out both; }
+    .animate-fade-in { animation: fadeIn 0.6s ease-out both; }
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-300 { animation-delay: 0.3s; }
+    .delay-400 { animation-delay: 0.4s; }
+    .delay-500 { animation-delay: 0.5s; }
+    .delay-600 { animation-delay: 0.6s; }
+    .delay-700 { animation-delay: 0.7s; }
+    .delay-800 { animation-delay: 0.8s; }
+
+    .hero-gradient { background: linear-gradient(135deg, #0B1120 0%, #131C31 40%, #0F1D32 100%); }
+    .hero-glow { background: radial-gradient(ellipse 60% 50% at 70% 40%, rgba(59,130,246,0.08) 0%, transparent 70%); }
+    .grid-overlay {
+      background-image:
+        linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px);
+      background-size: 64px 64px;
+    }
+
+    .service-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(59,130,246,0.12); }
+    .testimonial-card { transition: transform 0.3s ease; }
+    .testimonial-card:hover { transform: scale(1.02); }
+    .cta-glow { box-shadow: 0 0 0 0 rgba(245,158,11,0.4); animation: pulse-ring 2s ease-out infinite; }
+
+    .section-reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.7s ease-out, transform 0.7s ease-out; }
+    .section-reveal.visible { opacity: 1; transform: translateY(0); }
+    .badge-float { animation: float 3s ease-in-out infinite; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "Raphelec41",
+    "image": "https://raphelec41.fr/assets/logo.svg",
+    "url": "https://raphelec41.fr",
+    "telephone": "+33625096401",
+    "email": "raphelec41@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "18 Rue du Gris d'Aunis",
+      "addressLocality": "Naveil",
+      "postalCode": "41100",
+      "addressCountry": "FR"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "30"
+    },
+    "areaServed": ["Naveil","Vendôme","Villiers-sur-Loir","Saint-Ouen","Pezou","Thoré-la-Rochette","Lunay","Azé","Danzé","Mazangé","Montoire-sur-le-Loir"]
+  }
+  </script>
+</head>
+<body class="bg-white text-gray-900 overflow-x-hidden">
+
+  <!-- ==================== HEADER ==================== -->
+  <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="#" class="flex items-center gap-2 group">
+          <img src="assets/logo-white.png" alt="Raphelec41" class="h-10 w-auto">
+          <span class="font-heading font-bold text-lg tracking-tight" style="color:#fff">RAPHELEC<span class="text-amber">41</span></span>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="#services" class="text-sm font-medium transition-colors" style="color:rgba(255,255,255,0.7)">Services</a>
+          <a href="#apropos" class="text-sm font-medium transition-colors" style="color:rgba(255,255,255,0.7)">À propos</a>
+          <a href="#realisations" class="text-sm font-medium transition-colors" style="color:rgba(255,255,255,0.7)">Réalisations</a>
+          <a href="#avis" class="text-sm font-medium transition-colors" style="color:rgba(255,255,255,0.7)">Avis</a>
+          <a href="#zone" class="text-sm font-medium transition-colors" style="color:rgba(255,255,255,0.7)">Zone</a>
+          <a href="#contact" class="text-sm font-medium transition-colors" style="color:rgba(255,255,255,0.7)">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <a href="tel:0625096401" class="hidden sm:inline-flex items-center gap-2 bg-amber hover:bg-amber-light text-navy font-heading font-bold text-sm px-5 py-2.5 rounded-lg transition-all">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            06 25 09 64 01
+          </a>
+          <button id="menu-toggle" class="lg:hidden flex items-center justify-center w-10 h-10 text-white" aria-label="Menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-navy-light/98 backdrop-blur-lg border-t border-white/5">
+      <div class="px-4 py-6 space-y-1">
+        <a href="#services" class="block py-3 px-4 text-white/80 hover:text-white font-medium rounded-lg hover:bg-white/5 transition-colors">Services</a>
+        <a href="#apropos" class="block py-3 px-4 text-white/80 hover:text-white font-medium rounded-lg hover:bg-white/5 transition-colors">À propos</a>
+        <a href="#realisations" class="block py-3 px-4 text-white/80 hover:text-white font-medium rounded-lg hover:bg-white/5 transition-colors">Réalisations</a>
+        <a href="#avis" class="block py-3 px-4 text-white/80 hover:text-white font-medium rounded-lg hover:bg-white/5 transition-colors">Avis</a>
+        <a href="#zone" class="block py-3 px-4 text-white/80 hover:text-white font-medium rounded-lg hover:bg-white/5 transition-colors">Zone d'intervention</a>
+        <a href="#contact" class="block py-3 px-4 text-white/80 hover:text-white font-medium rounded-lg hover:bg-white/5 transition-colors">Contact</a>
+        <a href="tel:0625096401" class="flex items-center justify-center gap-2 mt-4 bg-amber text-navy font-heading font-bold text-base px-6 py-3 rounded-lg">
+          <i data-lucide="phone" class="w-5 h-5"></i>
+          06 25 09 64 01
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero-gradient relative overflow-hidden" style="min-height:100vh;display:flex;align-items:center">
+    <div class="hero-glow absolute inset-0"></div>
+    <div class="grid-overlay absolute inset-0"></div>
+
+    <div class="absolute top-20 right-10 w-72 h-72 rounded-full blur-3xl" style="background:rgba(59,130,246,0.06)"></div>
+    <div class="absolute bottom-20 left-10 w-48 h-48 rounded-full blur-3xl" style="background:rgba(245,158,11,0.05)"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full" style="padding-top:6rem;padding-bottom:4rem">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-6" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1)">
+            <span class="relative flex h-2 w-2">
+              <span class="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-green-400"></span>
+            </span>
+            <span class="text-sm font-medium" style="color:rgba(255,255,255,0.7)">Disponible 24h/24 — 7j/7</span>
+          </div>
+
+          <h1 class="font-heading" style="font-weight:800;font-size:clamp(2.25rem,5vw,3.75rem);line-height:1.1;letter-spacing:-0.02em;color:#ffffff">
+            Votre électricien<br>
+            <span style="color:#60A5FA">de confiance</span><br>
+            dans le Vendômois
+          </h1>
+
+          <p class="mt-6 max-w-lg" style="font-size:1.125rem;line-height:1.75;color:rgba(255,255,255,0.6)">
+            Dépannage d'urgence, installation, rénovation et éclairage. Raphaël Brunet intervient rapidement à Naveil, Vendôme et dans tout le Loir-et-Cher.
+          </p>
+
+          <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <a href="tel:0625096401" class="group relative inline-flex items-center justify-center gap-3 bg-amber hover:bg-amber-light text-navy font-heading rounded-xl transition-all" style="font-weight:700;font-size:1.125rem;padding:1rem 2rem">
+              <span class="absolute inset-0 rounded-xl cta-glow"></span>
+              <i data-lucide="phone" class="w-5 h-5"></i>
+              Appeler maintenant
+            </a>
+            <a href="#contact" class="inline-flex items-center justify-center gap-2 font-heading rounded-xl transition-all" style="font-weight:600;padding:1rem 2rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#ffffff">
+              <i data-lucide="file-text" class="w-5 h-5"></i>
+              Devis gratuit
+            </a>
+          </div>
+
+          <div class="mt-10 flex items-center gap-6">
+            <div class="flex items-center gap-1">
+              <div class="flex">
+                <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+                <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+                <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+                <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+                <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+              </div>
+              <span class="text-sm ml-2" style="color:rgba(255,255,255,0.6)">5/5 — 30+ avis</span>
+            </div>
+            <div class="h-4 w-px" style="background:rgba(255,255,255,0.2)"></div>
+            <span class="text-sm" style="color:rgba(255,255,255,0.6)">Intervention sous 24h</span>
+          </div>
+        </div>
+
+        <div class="hidden lg:flex items-center justify-center">
+          <div class="relative">
+            <div class="absolute inset-0 rounded-full blur-3xl" style="background:rgba(59,130,246,0.1);transform:scale(1.1)"></div>
+            <div class="relative w-80 h-80 rounded-full flex items-center justify-center badge-float" style="border:1px solid rgba(255,255,255,0.05);background:rgba(255,255,255,0.02)">
+              <div class="w-60 h-60 rounded-full flex items-center justify-center" style="border:1px solid rgba(255,255,255,0.05);background:rgba(255,255,255,0.02)">
+                <div class="w-40 h-40 rounded-full flex items-center justify-center" style="border:1px solid rgba(59,130,246,0.2);background:rgba(59,130,246,0.05)">
+                  <i data-lucide="zap" class="w-16 h-16 text-electric"></i>
+                </div>
+              </div>
+            </div>
+            <div class="absolute -top-4 -right-4 backdrop-blur rounded-xl px-4 py-3" style="background:rgba(19,28,49,0.9);border:1px solid rgba(255,255,255,0.1)">
+              <div class="text-amber font-heading font-bold text-xl">24/7</div>
+              <div class="text-xs" style="color:rgba(255,255,255,0.5)">Disponibilité</div>
+            </div>
+            <div class="absolute -bottom-4 -left-4 backdrop-blur rounded-xl px-4 py-3" style="background:rgba(19,28,49,0.9);border:1px solid rgba(255,255,255,0.1)">
+              <div class="font-heading font-bold text-xl" style="color:#60A5FA">30+</div>
+              <div class="text-xs" style="color:rgba(255,255,255,0.5)">Avis 5 étoiles</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2">
+      <a href="#services" class="flex flex-col items-center gap-2 transition-colors" style="color:rgba(255,255,255,0.3)">
+        <span class="text-xs tracking-widest uppercase">Découvrir</span>
+        <i data-lucide="chevron-down" class="w-5 h-5 animate-bounce"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES ==================== -->
+  <section id="services" class="py-20 lg:py-28 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto section-reveal">
+        <span class="inline-block font-heading font-semibold text-electric text-sm tracking-widest uppercase mb-3">Nos services</span>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-gray-900 tracking-tight">
+          Une expertise complète<br>en électricité
+        </h2>
+        <p class="mt-4 text-gray-500 text-lg">Du dépannage d'urgence à l'installation complète, nous couvrons tous vos besoins électriques avec professionnalisme et réactivité.</p>
+      </div>
+
+      <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 section-reveal">
+        <!-- Service 1 -->
+        <div class="service-card group bg-white rounded-2xl p-7 border border-gray-100 hover:border-electric/20">
+          <div class="w-12 h-12 rounded-xl bg-red-50 text-red-500 flex items-center justify-center mb-5 group-hover:bg-red-500 group-hover:text-white transition-colors">
+            <i data-lucide="siren" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-gray-900">Dépannage d'urgence</h3>
+          <p class="mt-2 text-gray-500 text-sm leading-relaxed">Intervention rapide sous 24h, disponible 7j/7 et 24h/24. Panne de courant, court-circuit, disjoncteur — nous intervenons rapidement.</p>
+          <div class="mt-4 inline-flex items-center gap-1 text-electric text-sm font-semibold">
+            <span>24h/24 — 7j/7</span>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card group bg-white rounded-2xl p-7 border border-gray-100 hover:border-electric/20">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 text-electric flex items-center justify-center mb-5 group-hover:bg-electric group-hover:text-white transition-colors">
+            <i data-lucide="plug" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-gray-900">Installation électrique</h3>
+          <p class="mt-2 text-gray-500 text-sm leading-relaxed">Mise en place d'installations complètes pour le neuf et la rénovation. Tableaux électriques, prises, interrupteurs et câblage aux normes.</p>
+          <div class="mt-4 inline-flex items-center gap-1 text-electric text-sm font-semibold">
+            <span>Neuf & rénovation</span>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card group bg-white rounded-2xl p-7 border border-gray-100 hover:border-electric/20">
+          <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber flex items-center justify-center mb-5 group-hover:bg-amber group-hover:text-white transition-colors">
+            <i data-lucide="lightbulb" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-gray-900">Éclairage extérieur</h3>
+          <p class="mt-2 text-gray-500 text-sm leading-relaxed">Conception et installation d'éclairages LED extérieurs : spots encastrés terrasse, appliques murales, chemins lumineux et mise en valeur.</p>
+          <div class="mt-4 inline-flex items-center gap-1 text-electric text-sm font-semibold">
+            <span>LED & basse consommation</span>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card group bg-white rounded-2xl p-7 border border-gray-100 hover:border-electric/20">
+          <div class="w-12 h-12 rounded-xl bg-green-50 text-green-600 flex items-center justify-center mb-5 group-hover:bg-green-600 group-hover:text-white transition-colors">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-gray-900">Contrôle & diagnostic</h3>
+          <p class="mt-2 text-gray-500 text-sm leading-relaxed">Vérification de la mise à la terre, diagnostic complet de votre installation, contrôle de conformité et mise en sécurité.</p>
+          <div class="mt-4 inline-flex items-center gap-1 text-electric text-sm font-semibold">
+            <span>Mise aux normes</span>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card group bg-white rounded-2xl p-7 border border-gray-100 hover:border-electric/20">
+          <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-5 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+            <i data-lucide="settings" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-gray-900">Maintenance & entretien</h3>
+          <p class="mt-2 text-gray-500 text-sm leading-relaxed">Entretien préventif d'armoires électriques, maintenance régulière de vos installations et remplacement de composants vieillissants.</p>
+          <div class="mt-4 inline-flex items-center gap-1 text-electric text-sm font-semibold">
+            <span>Particuliers & entreprises</span>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card group bg-white rounded-2xl p-7 border border-gray-100 hover:border-electric/20">
+          <div class="w-12 h-12 rounded-xl bg-orange-50 text-orange-600 flex items-center justify-center mb-5 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+            <i data-lucide="cable" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-gray-900">Câblage & courants faibles</h3>
+          <p class="mt-2 text-gray-500 text-sm leading-relaxed">Câblage réseau, courants faibles, lignes haute et basse tension. Intervention sur tous types d'installations électriques.</p>
+          <div class="mt-4 inline-flex items-center gap-1 text-electric text-sm font-semibold">
+            <span>HT & BT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center section-reveal">
+        <a href="#contact" class="inline-flex items-center gap-2 bg-electric hover:bg-blue-600 text-white font-heading font-bold px-8 py-4 rounded-xl transition-all text-lg">
+          <i data-lucide="file-text" class="w-5 h-5"></i>
+          Demander un devis gratuit
+        </a>
+        <p class="mt-3 text-gray-400 text-sm">Sans engagement — Réponse rapide</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== À PROPOS ==================== -->
+  <section id="apropos" class="py-20 lg:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:grid lg:grid-cols-2 gap-16 items-center">
+        <div class="section-reveal">
+          <div class="relative">
+            <div class="aspect-[4/5] rounded-2xl bg-gradient-to-br from-navy to-navy-light overflow-hidden flex items-center justify-center">
+              <div class="text-center p-8">
+                <div class="w-24 h-24 rounded-full bg-electric/10 border-2 border-electric/20 mx-auto flex items-center justify-center mb-6">
+                  <i data-lucide="user" class="w-12 h-12 text-electric"></i>
+                </div>
+                <div class="font-heading font-bold text-2xl text-white">Raphaël Brunet</div>
+                <div class="text-white/50 mt-1">Gérant — Raphelec41</div>
+                <div class="mt-6 grid grid-cols-2 gap-4 max-w-xs mx-auto">
+                  <div class="bg-white/5 rounded-xl p-4">
+                    <div class="font-heading font-bold text-2xl text-amber">24/7</div>
+                    <div class="text-white/40 text-xs mt-1">Disponibilité</div>
+                  </div>
+                  <div class="bg-white/5 rounded-xl p-4">
+                    <div class="font-heading font-bold text-2xl text-electric-bright">5/5</div>
+                    <div class="text-white/40 text-xs mt-1">Satisfaction</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="absolute -bottom-4 -right-4 bg-amber text-navy font-heading font-bold text-sm px-5 py-3 rounded-xl shadow-lg">
+              <div class="flex items-center gap-2">
+                <i data-lucide="badge-check" class="w-5 h-5"></i>
+                Artisan qualifié
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 lg:mt-0 section-reveal">
+          <span class="inline-block font-heading font-semibold text-electric text-sm tracking-widest uppercase mb-3">À propos</span>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-gray-900 tracking-tight">
+            Un artisan passionné,<br>à votre service
+          </h2>
+          <div class="mt-6 space-y-4 text-gray-500 leading-relaxed">
+            <p>
+              Je suis <strong class="text-gray-900">Raphaël Brunet</strong>, électricien professionnel basé à Naveil (41). Passionné par mon métier, j'interviens auprès des <strong class="text-gray-900">particuliers, industriels et du secteur tertiaire</strong> pour tous vos besoins en électricité.
+            </p>
+            <p>
+              Ma priorité : vous apporter un service <strong class="text-gray-900">réactif, de qualité et à un prix juste</strong>. Du dépannage d'urgence à l'installation complète, chaque intervention est réalisée dans les règles de l'art et dans le respect des normes en vigueur.
+            </p>
+            <p>
+              Disponible <strong class="text-gray-900">7 jours sur 7, 24 heures sur 24</strong>, je m'engage à intervenir rapidement — généralement sous 24 heures — pour résoudre vos problèmes électriques avec efficacité.
+            </p>
+          </div>
+          <div class="mt-8 grid grid-cols-2 gap-4">
+            <div class="flex items-start gap-3">
+              <div class="mt-1 flex-shrink-0 w-8 h-8 rounded-lg bg-electric/10 flex items-center justify-center">
+                <i data-lucide="clock" class="w-4 h-4 text-electric"></i>
+              </div>
+              <div>
+                <div class="font-heading font-bold text-sm text-gray-900">Réactif</div>
+                <div class="text-gray-400 text-xs">Intervention sous 24h</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="mt-1 flex-shrink-0 w-8 h-8 rounded-lg bg-electric/10 flex items-center justify-center">
+                <i data-lucide="wallet" class="w-4 h-4 text-electric"></i>
+              </div>
+              <div>
+                <div class="font-heading font-bold text-sm text-gray-900">Tarifs justes</div>
+                <div class="text-gray-400 text-xs">Devis gratuit et transparent</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="mt-1 flex-shrink-0 w-8 h-8 rounded-lg bg-electric/10 flex items-center justify-center">
+                <i data-lucide="award" class="w-4 h-4 text-electric"></i>
+              </div>
+              <div>
+                <div class="font-heading font-bold text-sm text-gray-900">Qualité</div>
+                <div class="text-gray-400 text-xs">Travail soigné aux normes</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="mt-1 flex-shrink-0 w-8 h-8 rounded-lg bg-electric/10 flex items-center justify-center">
+                <i data-lucide="message-circle" class="w-4 h-4 text-electric"></i>
+              </div>
+              <div>
+                <div class="font-heading font-bold text-sm text-gray-900">Conseil</div>
+                <div class="text-gray-400 text-xs">Accompagnement personnalisé</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== RÉALISATIONS ==================== -->
+  <section id="realisations" class="py-20 lg:py-28 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto section-reveal">
+        <span class="inline-block font-heading font-semibold text-electric text-sm tracking-widest uppercase mb-3">Réalisations</span>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-gray-900 tracking-tight">
+          Nos dernières interventions
+        </h2>
+        <p class="mt-4 text-gray-500 text-lg">Découvrez quelques-unes de nos réalisations récentes dans le Vendômois.</p>
+      </div>
+
+      <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 section-reveal">
+        <div class="group relative overflow-hidden rounded-2xl bg-navy aspect-[4/3] flex items-end">
+          <div class="absolute inset-0 bg-gradient-to-br from-electric/20 to-navy flex items-center justify-center">
+            <i data-lucide="lightbulb" class="w-16 h-16 text-white/20"></i>
+          </div>
+          <div class="relative z-10 p-6 bg-gradient-to-t from-black/80 via-black/40 to-transparent w-full">
+            <div class="text-amber text-xs font-heading font-semibold uppercase tracking-wider">Éclairage</div>
+            <h3 class="font-heading font-bold text-white mt-1">Éclairage extérieur LED</h3>
+            <p class="text-white/60 text-sm mt-1">Installation d'appliques murales LED — Mazangé</p>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl bg-navy aspect-[4/3] flex items-end">
+          <div class="absolute inset-0 bg-gradient-to-br from-amber/20 to-navy flex items-center justify-center">
+            <i data-lucide="home" class="w-16 h-16 text-white/20"></i>
+          </div>
+          <div class="relative z-10 p-6 bg-gradient-to-t from-black/80 via-black/40 to-transparent w-full">
+            <div class="text-amber text-xs font-heading font-semibold uppercase tracking-wider">Rénovation</div>
+            <h3 class="font-heading font-bold text-white mt-1">Installation combles</h3>
+            <p class="text-white/60 text-sm mt-1">Aménagement électrique complet — Naveil</p>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl bg-navy aspect-[4/3] flex items-end">
+          <div class="absolute inset-0 bg-gradient-to-br from-green-600/20 to-navy flex items-center justify-center">
+            <i data-lucide="shield-check" class="w-16 h-16 text-white/20"></i>
+          </div>
+          <div class="relative z-10 p-6 bg-gradient-to-t from-black/80 via-black/40 to-transparent w-full">
+            <div class="text-amber text-xs font-heading font-semibold uppercase tracking-wider">Sécurité</div>
+            <h3 class="font-heading font-bold text-white mt-1">Contrôle mise à la terre</h3>
+            <p class="text-white/60 text-sm mt-1">Diagnostic et mise en conformité — Vendôme</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center section-reveal">
+        <p class="text-gray-400 text-sm italic">Photos de chantier à venir — Contactez-nous pour voir nos travaux</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== AVIS ==================== -->
+  <section id="avis" class="py-20 lg:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto section-reveal">
+        <span class="inline-block font-heading font-semibold text-electric text-sm tracking-widest uppercase mb-3">Avis clients</span>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-gray-900 tracking-tight">
+          Ce que disent nos clients
+        </h2>
+        <div class="mt-4 flex items-center justify-center gap-2">
+          <div class="flex gap-0.5">
+            <i data-lucide="star" class="w-6 h-6 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-6 h-6 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-6 h-6 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-6 h-6 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-6 h-6 text-amber fill-amber"></i>
+          </div>
+          <span class="text-gray-500 text-lg font-medium">5/5 — Plus de 30 avis</span>
+        </div>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6 section-reveal">
+        <!-- Avis 1 -->
+        <div class="testimonial-card bg-gray-50 rounded-2xl p-7 border border-gray-100">
+          <div class="flex gap-0.5 mb-4">
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+          </div>
+          <blockquote class="text-gray-600 text-sm leading-relaxed">
+            &laquo;&nbsp;Très satisfaite du travail ! J'ai récemment fait appel à Raphelec pour l'installation de plusieurs éclairages LED. Travail propre, soigné et rapide. Excellents conseils et résultat impeccable. Je recommande vivement !&nbsp;&raquo;
+          </blockquote>
+          <div class="mt-5 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-electric/10 flex items-center justify-center font-heading font-bold text-electric text-sm">R</div>
+            <div>
+              <div class="font-heading font-semibold text-sm text-gray-900">Radija M.</div>
+              <div class="text-gray-400 text-xs">via Google</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Avis 2 -->
+        <div class="testimonial-card bg-gray-50 rounded-2xl p-7 border border-gray-100">
+          <div class="flex gap-0.5 mb-4">
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+          </div>
+          <blockquote class="text-gray-600 text-sm leading-relaxed">
+            &laquo;&nbsp;Vous cherchez un électricien sur Vendôme ? RAPHELEC ! J'ai fait appel en urgence un soir à 21h. Moins de 30 min plus tard il était chez nous. Raphaël fait parti des vrais artisans consciencieux. Agréable, efficace, humain et ses tarifs sont corrects&nbsp;!&nbsp;&raquo;
+          </blockquote>
+          <div class="mt-5 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-amber/10 flex items-center justify-center font-heading font-bold text-amber text-sm">D</div>
+            <div>
+              <div class="font-heading font-semibold text-sm text-gray-900">Dolores S.</div>
+              <div class="text-gray-400 text-xs">via Google</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Avis 3 -->
+        <div class="testimonial-card bg-gray-50 rounded-2xl p-7 border border-gray-100">
+          <div class="flex gap-0.5 mb-4">
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+          </div>
+          <blockquote class="text-gray-600 text-sm leading-relaxed">
+            &laquo;&nbsp;Artisan sérieux, compétent, réactif et sympathique. Je recommande très vivement.&nbsp;&raquo;
+          </blockquote>
+          <div class="mt-5 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-green-500/10 flex items-center justify-center font-heading font-bold text-green-600 text-sm">S</div>
+            <div>
+              <div class="font-heading font-semibold text-sm text-gray-900">Sajjad H.</div>
+              <div class="text-gray-400 text-xs">via Google</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Avis 4 -->
+        <div class="testimonial-card bg-gray-50 rounded-2xl p-7 border border-gray-100">
+          <div class="flex gap-0.5 mb-4">
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+          </div>
+          <blockquote class="text-gray-600 text-sm leading-relaxed">
+            &laquo;&nbsp;Suite à une panne d'électricité, il est arrivé en moins d'une heure. Je recommande.&nbsp;&raquo;
+          </blockquote>
+          <div class="mt-5 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-purple-500/10 flex items-center justify-center font-heading font-bold text-purple-600 text-sm">K</div>
+            <div>
+              <div class="font-heading font-semibold text-sm text-gray-900">Karine M.</div>
+              <div class="text-gray-400 text-xs">via Google</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Avis 5 -->
+        <div class="testimonial-card bg-gray-50 rounded-2xl p-7 border border-gray-100 md:col-span-2 lg:col-span-2">
+          <div class="flex gap-0.5 mb-4">
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+            <i data-lucide="star" class="w-4 h-4 text-amber fill-amber"></i>
+          </div>
+          <blockquote class="text-gray-600 text-sm leading-relaxed">
+            &laquo;&nbsp;Électricien très sérieux. Très professionnel qui connaît bien son travail et de bons conseils. Nous le recommandons.&nbsp;&raquo;
+          </blockquote>
+          <div class="mt-5 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-orange-500/10 flex items-center justify-center font-heading font-bold text-orange-600 text-sm">JM</div>
+            <div>
+              <div class="font-heading font-semibold text-sm text-gray-900">Jean-Marc R.</div>
+              <div class="text-gray-400 text-xs">via Google</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 text-center section-reveal">
+        <a href="https://www.google.com/maps/search/?api=1&query=Raphelec&query_place_id=ChIJXYkWGA8_WAQRe8iK4q1VTjk" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-electric font-heading font-semibold hover:underline">
+          Voir tous les avis sur Google
+          <i data-lucide="external-link" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ZONE D'INTERVENTION ==================== -->
+  <section id="zone" class="py-20 lg:py-28 bg-navy text-white relative overflow-hidden">
+    <div class="absolute inset-0 grid-overlay"></div>
+    <div class="absolute top-0 right-0 w-96 h-96 bg-electric/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:grid lg:grid-cols-2 gap-16 items-center">
+        <div class="section-reveal">
+          <span class="inline-block font-heading font-semibold text-electric-bright text-sm tracking-widest uppercase mb-3">Zone d'intervention</span>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white tracking-tight">
+            Nous intervenons dans tout le Vendômois
+          </h2>
+          <p class="mt-4 text-white/50 text-lg leading-relaxed">
+            Basé à Naveil, j'interviens rapidement dans toutes les communes environnantes. Pas dans la liste ? Contactez-moi, je me déplace peut-être chez vous.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-2">
+            <span class="inline-flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-white/80">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-electric-bright"></i> Naveil
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-white/80">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-electric-bright"></i> Vendôme
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-white/80">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-electric-bright"></i> Villiers-sur-Loir
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-white/80">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-electric-bright"></i> Saint-Ouen
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-white/80">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-electric-bright"></i> Pezou
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-white/80">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-electric-bright"></i> Thoré-la-Rochette
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-white/80">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-electric-bright"></i> Lunay
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-white/80">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-electric-bright"></i> Azé
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-white/80">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-electric-bright"></i> Danzé
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-white/80">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-electric-bright"></i> Mazangé
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-white/80">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-electric-bright"></i> Montoire-sur-le-Loir
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-white/80">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-electric-bright"></i> Sainte-Anne
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-white/80">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-electric-bright"></i> Villetrun
+            </span>
+          </div>
+        </div>
+
+        <div class="mt-12 lg:mt-0 section-reveal">
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-8">
+            <div class="text-center mb-8">
+              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-electric/10 mb-4">
+                <i data-lucide="map" class="w-8 h-8 text-electric-bright"></i>
+              </div>
+              <h3 class="font-heading font-bold text-xl text-white">Loir-et-Cher (41)</h3>
+              <p class="text-white/50 text-sm mt-1">Basé à Naveil, proche de Vendôme</p>
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-center gap-4 bg-white/5 rounded-xl p-4">
+                <i data-lucide="clock" class="w-5 h-5 text-amber flex-shrink-0"></i>
+                <div>
+                  <div class="font-heading font-semibold text-white text-sm">Intervention rapide</div>
+                  <div class="text-white/40 text-xs">Sous 24h en moyenne</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-4 bg-white/5 rounded-xl p-4">
+                <i data-lucide="truck" class="w-5 h-5 text-amber flex-shrink-0"></i>
+                <div>
+                  <div class="font-heading font-semibold text-white text-sm">Déplacement inclus</div>
+                  <div class="text-white/40 text-xs">Dans le périmètre d'intervention</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-4 bg-white/5 rounded-xl p-4">
+                <i data-lucide="phone" class="w-5 h-5 text-amber flex-shrink-0"></i>
+                <div>
+                  <div class="font-heading font-semibold text-white text-sm">Disponible 24h/24</div>
+                  <div class="text-white/40 text-xs">Urgences comprises</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="py-20 lg:py-28 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto section-reveal">
+        <span class="inline-block font-heading font-semibold text-electric text-sm tracking-widest uppercase mb-3">Contact</span>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-gray-900 tracking-tight">
+          Besoin d'un électricien ?
+        </h2>
+        <p class="mt-4 text-gray-500 text-lg">Appelez-nous directement ou envoyez-nous un message. Devis gratuit et sans engagement.</p>
+      </div>
+
+      <div class="mt-14 section-reveal">
+        <!-- Primary CTAs -->
+        <div class="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto mb-10">
+          <a href="tel:0625096401" class="flex items-center gap-5 bg-amber/10 border border-amber/20 rounded-2xl p-7 hover:bg-amber/20 transition-colors group">
+            <div class="w-16 h-16 rounded-xl bg-amber flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+              <i data-lucide="phone" class="w-7 h-7 text-white"></i>
+            </div>
+            <div>
+              <div class="font-heading font-bold text-gray-900 text-xl">06 25 09 64 01</div>
+              <div class="text-gray-500 text-sm mt-0.5">Disponible 24h/24 — 7j/7</div>
+            </div>
+          </a>
+
+          <a href="mailto:raphelec41@gmail.com?subject=Demande%20de%20devis%20-%20Raphelec41&body=Bonjour%2C%0A%0AJe%20souhaiterais%20obtenir%20un%20devis%20pour%20%3A%0A%0A-%20Type%20d'intervention%20%3A%20%0A-%20Description%20%3A%20%0A-%20Adresse%20%3A%20%0A-%20T%C3%A9l%C3%A9phone%20%3A%20%0A%0AMerci%20!" class="flex items-center gap-5 bg-electric/5 border border-electric/20 rounded-2xl p-7 hover:bg-electric/10 transition-colors group">
+            <div class="w-16 h-16 rounded-xl bg-electric flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+              <i data-lucide="mail" class="w-7 h-7 text-white"></i>
+            </div>
+            <div>
+              <div class="font-heading font-bold text-gray-900 text-xl">Envoyer un email</div>
+              <div class="text-gray-500 text-sm mt-0.5">raphelec41@gmail.com</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Secondary info -->
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 max-w-3xl mx-auto">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=47.791769,1.039432" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-gray-500 hover:text-electric text-sm transition-colors">
+            <i data-lucide="map-pin" class="w-4 h-4"></i>
+            18 Rue du Gris d'Aunis, 41100 Naveil
+          </a>
+          <span class="hidden sm:inline text-gray-200">|</span>
+          <a href="https://www.facebook.com/p/Raphelec-61568431362187/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-gray-500 hover:text-[#1877F2] text-sm transition-colors">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            Facebook
+          </a>
+          <span class="hidden sm:inline text-gray-200">|</span>
+          <span class="inline-flex items-center gap-2 text-gray-500 text-sm">
+            <i data-lucide="clock" class="w-4 h-4"></i>
+            7j/7 — 24h/24
+          </span>
+          <span class="hidden sm:inline text-gray-200">|</span>
+          <span class="inline-flex items-center gap-2 text-gray-500 text-sm">
+            <i data-lucide="wallet" class="w-4 h-4"></i>
+            Espèces, chèque, virement
+          </span>
+        </div>
+
+        <p class="mt-8 text-center text-gray-400 text-sm">Devis gratuit et sans engagement — Réponse rapide garantie</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-navy text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="lg:col-span-2">
+          <a href="#" class="flex items-center gap-2 mb-4">
+            <img src="assets/logo-white.png" alt="Raphelec41" class="h-9 w-auto">
+            <span class="font-heading font-bold text-lg" style="color:#fff">RAPHELEC<span class="text-amber">41</span></span>
+          </a>
+          <p class="text-white/50 text-sm leading-relaxed max-w-sm">
+            Électricien professionnel à Naveil et Vendôme. Dépannage 24h/24, installation, rénovation et éclairage dans tout le Loir-et-Cher.
+          </p>
+          <div class="mt-4 flex gap-3">
+            <a href="https://www.facebook.com/p/Raphelec-61568431362187/" target="_blank" rel="noopener" class="w-10 h-10 rounded-lg bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" style="color:rgba(255,255,255,0.6)"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-bold text-sm uppercase tracking-wider text-white/80 mb-4">Navigation</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#services" class="text-white/50 hover:text-white transition-colors">Services</a></li>
+            <li><a href="#apropos" class="text-white/50 hover:text-white transition-colors">À propos</a></li>
+            <li><a href="#realisations" class="text-white/50 hover:text-white transition-colors">Réalisations</a></li>
+            <li><a href="#avis" class="text-white/50 hover:text-white transition-colors">Avis clients</a></li>
+            <li><a href="#contact" class="text-white/50 hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-bold text-sm uppercase tracking-wider text-white/80 mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm text-white/50">
+            <li class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-electric-bright"></i>
+              <a href="tel:0625096401" class="hover:text-white transition-colors">06 25 09 64 01</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-electric-bright"></i>
+              <a href="mailto:raphelec41@gmail.com" class="hover:text-white transition-colors">raphelec41@gmail.com</a>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-electric-bright mt-0.5"></i>
+              <span>18 Rue du Gris d'Aunis<br>41100 Naveil</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/30">
+        <p>&copy; 2024–2026 Raphelec41 — SIRET 93491136300018 — Tous droits réservés</p>
+        <a href="mentions-legales.html" class="hover:text-white/60 transition-colors">Mentions légales</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING CTA (Mobile) ==================== -->
+  <div id="floating-cta" class="fixed bottom-6 left-4 right-4 z-50 sm:hidden opacity-0 translate-y-4 transition-all duration-300 pointer-events-none">
+    <a href="tel:0625096401" class="flex items-center justify-center gap-3 bg-amber text-navy font-heading font-bold text-base py-4 rounded-2xl shadow-2xl shadow-amber/30 w-full">
+      <i data-lucide="phone" class="w-5 h-5"></i>
+      Appeler — 06 25 09 64 01
+    </a>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    // Header scroll behavior
+    const header = document.getElementById('header');
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const scroll = window.scrollY;
+      if (scroll > 80) {
+        header.classList.add('bg-navy/95', 'backdrop-blur-lg', 'shadow-lg', 'shadow-black/10');
+      } else {
+        header.classList.remove('bg-navy/95', 'backdrop-blur-lg', 'shadow-lg', 'shadow-black/10');
+      }
+      lastScroll = scroll;
+    });
+
+    // Mobile menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    // Floating CTA on mobile
+    const floatingCta = document.getElementById('floating-cta');
+    const heroSection = document.querySelector('section');
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) {
+        floatingCta.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+        floatingCta.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      } else {
+        floatingCta.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+        floatingCta.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      }
+    }, { threshold: 0.1 });
+    observer.observe(heroSection);
+
+    // Section reveal on scroll
+    const reveals = document.querySelectorAll('.section-reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => revealObserver.observe(el));
+  </script>
+</body>
+</html>
